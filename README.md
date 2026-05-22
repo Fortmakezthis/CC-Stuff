@@ -1,2 +1,2 @@
-# CC-Cyberscurity
-Repo to store cybersecurity files for CC Tweaked
+# CC-Stuff
+Repo to store random CC: Tweaked stuff.
