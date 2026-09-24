@@ -1,5 +1,6 @@
 local cmp = {}
 
+--This doesn't actually compress yet, it only puts a directory into an archive file.
 function cmp.compress_directory(directory)
     local contents = {}
 
@@ -20,6 +21,7 @@ function cmp.compress_directory(directory)
     return contents
 end
 
+--As mentioned earlier, this doesn't decompress either, it just extracts the archive into a directory.
 function cmp.decompress_json(tree, directory)
     fs.makeDir(directory)
 

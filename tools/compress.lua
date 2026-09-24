@@ -13,6 +13,7 @@ if decompress ~= nil and decompress:lower() ~= "true" and decompress:lower() ~= 
     return
 end
 
+--This doesn't actually compress yet, it only puts a directory into an archive file.
 function compress_directory(directory)
     local contents = {}
 
@@ -33,6 +34,7 @@ function compress_directory(directory)
     return contents
 end
 
+--As mentioned earlier, this doesn't decompress either, it just extracts the archive into a directory.
 function decompress_json(tree, directory)
     fs.makeDir(directory)
 
